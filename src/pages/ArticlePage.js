@@ -8,8 +8,8 @@ function ArticlePage() {
   return (
     <>
       <h1>{article.title}</h1>
-      {article.content.map((p) => (
-        <p>{p}</p>
+      {article.content.map((paragraph, i) => (
+        <p key={i}>{paragraph}</p>
       ))}
     </>
   );
